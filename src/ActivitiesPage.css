@@ -1,0 +1,91 @@
+body{
+    background-color: black;
+}
+.ActivitiesPage{
+    margin-left:auto;
+    margin-right:auto;
+    height:auto; 
+    width:auto;
+}
+
+.header {
+    margin-left:auto;
+    margin-right:auto;
+    height:auto; 
+    width:auto;
+    float: left;
+}
+
+.title {
+    margin: 6%;
+    color: #006B83;
+}
+
+.location {
+    display: inline-block;
+    width: 100%;
+    margin-left: 50%;
+    opacity: 1.0;
+    color: white;
+}
+
+.activitySelection{
+    clear: left;
+    position: absolute;
+    bottom: 15%;
+    left: 15%;
+}
+.city {
+    margin-left: 0;
+}
+.activityImage {
+    opacity: 0.5;
+}
+.locationIcon{
+    margin-right: 10px;
+}
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+/* Bottom left text */
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+  }
+  
+  /* Top left text */
+  .top-left {
+    position: absolute;
+    top: 8px;
+    left: 40px;
+  }
+  
+  /* Top right text */
+  .top-right {
+    position: absolute;
+    top: 85px;
+    left: 100px;
+  }
+  
+  /* Bottom right text */
+  .bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+  }
+  
+  /* Centered text */
+  .centered {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    width:80%;
+    transform: translate(-50%, -50%);
+  }
+
+  .likeIcon {
+    margin-top: 5%;
+  }

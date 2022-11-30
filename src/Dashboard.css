@@ -1,0 +1,17 @@
+body{
+    background-color: black;
+    margin-left:auto;
+    margin-right:auto;
+    height:auto; 
+    width:auto;
+}
+
+.header {
+    float: left;
+    color: #006B83;
+}
+
+.likedActivities {
+    margin-top: 20%;
+    float: left;
+}

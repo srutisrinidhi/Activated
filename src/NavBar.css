@@ -1,0 +1,20 @@
+body{
+  color: white;
+  margin-right: 15%;
+  margin-left: 15%;
+  margin-top: 3%;
+  font-size: large;
+}
+
+span{
+  float: right;
+  margin-right: 40px;
+  margin-left: 40px;
+}
+
+hr {
+  border: 2px solid #006B83;
+  border-radius: 7px 7px 7px 7px;
+  background-color: #006B83;
+  width: 100%;
+}
