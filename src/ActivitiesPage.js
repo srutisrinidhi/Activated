@@ -103,7 +103,7 @@ class ActivitiesPage extends Component {
         <div className='header'>
           <h1 className='title'>Activated</h1>
           <div className='location'>
-            <img className="locationIcon" src={icon} width={20}></img>
+            <img className="locationIcon" src={icon} width={20} alt="location icon"></img>
             <span className="city">Pittsburgh</span>
           </div>
         </div>
