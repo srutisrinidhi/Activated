@@ -18,7 +18,7 @@ class App extends Component {
     super(props);
     this.state = {
       activitiesVisible: 'block',
-      activitiesColor:'#006B83',
+      activitiesColor:'#89d8ea',
       dashboardVisible: 'none',
       dashboardColor:'white',
       mapVisible: 'none',
@@ -33,7 +33,7 @@ class App extends Component {
       this.setState(prevState => ({
         ...prevState,
         activitiesVisible: 'block',
-        activitiesColor:'#006B83',
+        activitiesColor:'#89d8ea',
         dashboardVisible: 'none',
         dashboardColor:'white',
         mapVisible: 'none',
@@ -51,7 +51,7 @@ class App extends Component {
       this.setState(prevState => ({
         ...prevState,
         dashboardVisible: 'block',
-        dashboardColor:'#006B83',
+        dashboardColor:'#89d8ea',
         activitiesVisible: 'none',
         activitiesColor:'white',
         mapVisible: 'none',
@@ -74,7 +74,7 @@ class App extends Component {
       this.setState(prevState => ({
         ...prevState,
         mapVisible: 'block',
-        mapColor:'#006B83',
+        mapColor:'#89d8ea',
         dashboardVisible: 'none',
         dashboardColor:'white',
         activitiesVisible: 'none',
