@@ -2,7 +2,7 @@
   "name": "activated",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://<github-username>.github.io/Activated",
+  "homepage": "https://srutisrinidhi.github.io/Activated",
   "dependencies": {
     "@fullcalendar/daygrid": "^5.11.3",
     "@fullcalendar/interaction": "^5.11.3",
