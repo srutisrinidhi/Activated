@@ -49,7 +49,7 @@ class LocationPin extends Component {
           <div>
           <span className="google-map">
             <GoogleMapReact
-              bootstrapURLKeys={{ key: 'AIzaSyCtMTXsLwFCbfNGghI5scR53cLrEvHXFmE' }}
+              bootstrapURLKeys={{ key: 'AIzaSyCUpI-PQZhIMQvArLShpYjiqZhaD9abxps' }}
               defaultCenter={[40.4406,-79.9959]}
               defaultZoom={12}
             >
@@ -68,7 +68,7 @@ class LocationPin extends Component {
                 {this.props.activities.map(
                     ({src,title,location,coords,description},idx) => {
                         return (<div className='likedContainer'> <img className='images' id="image"
-                        src={src} width={idx===this.state.currentHover?250:200}/>
+                        src={src} alt={title} width={idx===this.state.currentHover?250:200}/>
                         <div className="title-location"> 
                         <h4>{title}</h4>
                         <img className="locationIcon" src={icon} width={20}></img>

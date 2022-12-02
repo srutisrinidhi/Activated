@@ -49,23 +49,10 @@
   opacity: 0.6;
 }
 
-.dashboardWrapper{
-  margin-left:auto;
-  margin-right:auto;
-  height:auto; 
-  width:auto;
-  float: left;
-}
+
 .likedContainer {
   position: relative;
   text-align: center;
   color: white;
 }
 
-.title-location {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    width:80%;
-    transform: translate(-50%, -50%);
-}

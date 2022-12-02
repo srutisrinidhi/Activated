@@ -44,6 +44,10 @@ class App extends Component {
   showDashboardPage = () => {
       let liked = JSON.parse(localStorage.getItem("likedActivities"));
       let act = JSON.parse(localStorage.getItem("activities"));
+      let likeList = []
+      liked.forEach(item =>
+        likeList.push(act[item])
+      )
       this.setState(prevState => ({
         ...prevState,
         dashboardVisible: 'block',
@@ -53,7 +57,8 @@ class App extends Component {
         mapVisible: 'none',
         mapColor:'white',
         likedActivities: liked,
-        activities: act
+        activities: act,
+        likedActivityList:likeList
       }));
       console.log(liked)
   }
@@ -85,20 +90,7 @@ class App extends Component {
       <div className="App">
         <NavBar clickedActivities={this.showActivitiesPage} clickedDashboard={this.showDashboardPage} clickedMap={this.showMapPage} activitiesColor={this.state.activitiesColor} dashboardColor={this.state.dashboardColor} mapColor={this.state.mapColor}></NavBar>
         <div style={{display:this.state.activitiesVisible}}><ActivitiesPage></ActivitiesPage></div>
-        <div className='dashboardWrapper' style={{display:this.state.dashboardVisible}}><div className='dashboards'><Dashboard like={this.state.likedActivities}></Dashboard></div>
-          <div className='likedDisplay'>
-            {this.state.likedActivities.map(
-                idx => {
-                    return (<div className='likedContainer'> <img className='images'
-                    src={this.state.activities[idx].src} width={200}/>
-                    <div className="title-location"> 
-                    <h4>{this.state.activities[idx].title}</h4>
-                    <img className="locationIcon" src={icon} width={20}></img>
-                    {this.state.activities[idx].location}
-                    </div> </div>)
-                }
-              )}
-          </div>
+        <div className='dashboardWrapper' style={{display:this.state.dashboardVisible}}><div className='dashboards'><Dashboard activities={this.state.likedActivityList}></Dashboard></div>
         </div>
         <div style={{display:this.state.mapVisible}}><Maps activities={this.state.likedActivityList} ></Maps></div>
       </div>

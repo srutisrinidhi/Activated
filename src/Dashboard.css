@@ -7,11 +7,53 @@ body{
 }
 
 .header {
+    margin-left:auto;
+    margin-right:auto;
+    height:auto; 
+    width:auto;
     float: left;
     color: #006B83;
 }
 
-.likedActivities {
-    margin-top: 20%;
+.containerLike{
+    margin-left:auto;
+    margin-right:auto;
+    height:auto; 
+    width:auto;
+    width: 100%;
     float: left;
+}
+.likedActivities {
+    margin-left:auto;
+    margin-right:auto;
+    height:auto; 
+    width:auto;
+    float: left;
+    margin-left: 5%;
+}
+
+.calendar {
+    height: 100px;
+    width: 65%;
+}
+
+.fullcalendar {
+    height: 500px;
+}
+
+
+.likedDisplay {
+    clear: left;
+      display: flex;
+      flex-direction: column;
+      margin: 3%;
+      margin-left: 3%;
+  }
+
+.title-location {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width:80%;
+    transform: translate(-50%, -50%);
 }
