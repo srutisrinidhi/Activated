@@ -111,7 +111,7 @@ class ActivitiesPage extends Component {
         <div className='activitySelection'>
           <span className="likeIcon"><img src={'activityImages/check.png'} width={200} onClick={this.likeActivity} alt="like"/></span>
           <span className='container'>
-            <img className="activityImage" src={this.state.activities[this.state.currentActivity].src} width={500} height={300}/>
+            <img className="activityImage" src={this.state.activities[this.state.currentActivity].src} alt={this.state.activities[this.state.currentActivity].title} width={500} height={300}/>
             <div className="top-left"> <h1>{this.state.activities[this.state.currentActivity].title}</h1></div>
             <div className="top-right">
               <img className="locationIcon" src={icon} width={20} alt="location icon"></img>
