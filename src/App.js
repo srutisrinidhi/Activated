@@ -88,11 +88,14 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <header>
         <NavBar clickedActivities={this.showActivitiesPage} clickedDashboard={this.showDashboardPage} clickedMap={this.showMapPage} activitiesColor={this.state.activitiesColor} dashboardColor={this.state.dashboardColor} mapColor={this.state.mapColor}></NavBar>
+        </header>
         <div style={{display:this.state.activitiesVisible}}><ActivitiesPage></ActivitiesPage></div>
         <div className='dashboardWrapper' style={{display:this.state.dashboardVisible}}><div className='dashboards'><Dashboard activities={this.state.likedActivityList}></Dashboard></div>
         </div>
         <div style={{display:this.state.mapVisible}}><Maps activities={this.state.likedActivityList} ></Maps></div>
+        <footer></footer>
       </div>
     );
   }

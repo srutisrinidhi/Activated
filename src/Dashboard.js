@@ -107,7 +107,7 @@ class Dashboard extends Component {
         </div>
         <div className='containerLike'>
         <span className='likedActivities'>
-          <h3>Liked Activities</h3>
+          <h2>Liked Activities</h2>
           <span className='likedDisplay'>
           {this.props.activities.map(
                     ({src,title,location,coords,description, data},idx) => {
